@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+class Insertion
+{
+    int A[10];
+public:
+    void set_data();
+    void Ascending();
+    void Descending();
+    void output();
+};
+
+void Insertion::set_data()
+{
+    cout << "Input The Values: " << endl;
+    for(int i=0; i<10; i++)
+    {
+        cin >> A[i];
+    }
+    cout << endl << endl;
+}
+
+void Insertion::Ascending()
+{
+    int i, j, index;
+    for(i=1; i<10; i++)
+    {
+        index = A[i];
+        j = i - 1;
+        while(j >= 0 && A[j] > index)
+        {
+            A[j+1] = A[j];
+            j = j - 1;
+        }
+        A[j+1] = index;
+    }
+}
+
+void Insertion::Descending()
+{
+    int i, j, item;
+    for(int i=1; i<10; i++)
+    {
+        item = A[i];
+        j = i - 1;
+        while(j >= 0 && A[j] < item)
+        {
+            A[j+1] = A[j];
+            j = j - 1;
+        }
+        A[j+1] = item;
+    }
+}
+
+void Insertion::output()
+{
+    for(int i=0; i<10; i++)
+    {
+        cout << A[i] << endl;
+    }
+    cout << "Complete! " << endl;
+}
+
+
+int main()
+{
+    Insertion ob1, ob2;
+
+    cout << "\t\t\tInsertion... " << endl;
+    cout << "\t Insertion in Ascending order.." << endl;
+    ob1.set_data();
+    ob1.Ascending();
+    ob1.output();
+
+    cout << "\t Insertion Descending order.." << endl;
+    ob2.set_data();
+    ob2.Descending();
+    ob2.output();
+
+    return 0;
+}

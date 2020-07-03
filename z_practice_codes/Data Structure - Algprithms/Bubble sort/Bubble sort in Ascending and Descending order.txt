@@ -1,0 +1,83 @@
+#include <iostream>
+using namespace std;
+
+
+class Bubble_sort{
+    int A[10];
+public:
+    void set_data();
+    void Ascending();
+    void Descending();
+    void Output();
+};
+
+void Bubble_sort::set_data()
+{
+    cout << "Input Data: " << endl;
+    for(int i = 0; i<10; i++)
+    {
+        cin >> A[i];
+    }
+}
+
+void Bubble_sort::Ascending()
+{
+    int i, j, temp;
+    for(i=0; i<10; i++)
+    {
+        for(j=0; j<10-i-1; j++)
+        {
+            if(A[j] > A[j+1])
+            {
+                temp = A[j];
+                A[j] = A[j+1];
+                A[j+1] = temp;
+            }
+        }
+    }
+}
+
+
+void Bubble_sort::Descending()
+{
+    int i, j, temp;
+    for(i=0; i<10; i++)
+    {
+        for(j=0; j<10-i-1; j++)
+        {
+            if(A[j] < A[j+1])
+            {
+                temp = A[j];
+                A[j] = A[j+1];
+                A[j+1] = temp;
+            }
+        }
+    }
+}
+
+void Bubble_sort::Output()
+{
+    cout << "Output: " << endl;
+    for(int i = 0; i<10; i++)
+    {
+        cout <<"\t\t" << A[i] << endl;
+    }
+    cout << "Complete!" << endl;
+}
+
+int main()
+{
+    Bubble_sort o1, o2;
+
+    cout << "Bubble sort in Ascending order:" <<endl;
+    o1.set_data();
+    o1.Ascending();
+    o1.Output();
+
+    cout << "Bubble sort in Descending order:" <<endl;
+    o2.set_data();
+    o2.Descending();
+    o2.Output();
+
+    return 0;
+}

@@ -1,0 +1,4 @@
+Every leap year comes after 4 years.
+If a year is evenly divisible by 400, then it's a Leap year.
+If it is not divisible by 400 but evenly divisible by 4 and not evenly divisible by 100
+then it's a leap year!
