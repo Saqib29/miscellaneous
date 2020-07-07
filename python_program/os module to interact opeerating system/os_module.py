@@ -13,3 +13,7 @@ print('modified time: ',os.path.getmtime('areas.py'))      # os.path.getmtime('f
 timestamp = os.path.getmtime('areas.py')
 date = datetime.datetime.fromtimestamp(timestamp)
 print('Date: ',date)
+
+# to know path whwre the file existed
+path = os.path.abspath('areas.py')
+print('Path: ',path)
