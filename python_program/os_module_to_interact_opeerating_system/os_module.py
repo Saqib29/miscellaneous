@@ -17,3 +17,13 @@ print('Date: ',date)
 # to know path whwre the file existed
 path = os.path.abspath('areas.py')
 print('Path: ',path)
+
+# to see the current working directory
+print("Current Directory: ",os.getcwd())
+
+# to create new directory
+os.mkdir('directory_name')
+
+# to move new directory
+os.chdir('directory_name')
+print('Current Directory: ', os.getcwd())
