@@ -5,6 +5,7 @@ r = sr.Recognizer()
 
 with sr.Microphone() as mic:
     print("say .. ")
+    r.adjust_for_ambient_noise(mic, 2)
     audio = r.listen(mic)
     try:
         text = r.recognize_google(audio)
