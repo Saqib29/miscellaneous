@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <GL/gl.h>
+#include <GL/gl.h>
 #include <GL/glut.h>
 
 void myDisplay(void)

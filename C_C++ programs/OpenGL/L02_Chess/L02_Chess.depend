@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1594307157 source:d:\programming\c_c++ programs\opengl\l02_chess\main.cpp
+1595232771 source:d:\programming\c_c++ programs\opengl\l02_chess\main.cpp
 	<stdio.h>
-	<GL/gl.h>
 	<GL/glut.h>
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
