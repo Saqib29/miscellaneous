@@ -1,0 +1,18 @@
+Datatypes in Dart Language
+
+1. numbers:
+	a. Integer
+	b. Double
+2. String
+3. Boolean
+4. List & Map
+
+non type safety::
+
+var name="saqib"
+var age=23
+
+type safety::
+
+String name="saqib"
+int age=23

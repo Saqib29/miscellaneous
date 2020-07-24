@@ -1,0 +1,8 @@
+
+Arithmetic: +  - * / % ++ --
+
+Equality & Relational operator:  >  <  >=  <=  ==  !=
+
+Assignment Operators: =  ??=  +=  -=  *=  /=
+
+Logival Operators:  &&  ||  !
