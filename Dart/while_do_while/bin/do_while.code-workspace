@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\variables"
+	},
+	{
+		"path": "..\\..\\dynamic_const_final_keyword"
+	},
+	{
+		"path": "..\\..\\dart_operator\\bin"
+	},
+	{
+		"path": "..\\..\\for_loop"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {}
+}
