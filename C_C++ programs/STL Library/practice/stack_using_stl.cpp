@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stack>
 #include <string>
-#include <cstring>
 #include <cstdio>
 
 using namespace std;
@@ -15,37 +14,35 @@ void Visit()
     cin >> s;
     printf("%s\n", s.c_str());
     backward.push(s);
-   // while(!for_ward.empty()) for_ward.pop();
+    while(!for_ward.empty())
+        for_ward.pop();
 
 }
 
 int Back()
 {
-    if (backward.size() < 1){
-        printf("Ignored\n");
-    }
-    else{
+    if(backward.size() > 1){
         for_ward.push(backward.top());
         backward.pop();
-        if (backward.size() < 1){
-        printf("Ignored\n");
-        return 0;
-    }
         printf("%s\n", backward.top().c_str());
+    }
+    else{
+        printf("Ignored\n");
     }
 
 }
 
 int Forward()
 {
-    if(for_ward.size() < 1){
-        printf("Ignored\n");
-    }
-    else{
+    if(!for_ward.empty()){
         backward.push(for_ward.top());
         printf("%s\n", for_ward.top().c_str());
         for_ward.pop();
     }
+    else{
+        printf("Ignored\n");
+    }
+
 }
 
 void Operation()
@@ -63,6 +60,9 @@ void Operation()
             Forward();
         }
         else if(s == "QUIT"){
+            while(!for_ward.empty()) for_ward.pop();
+            while(!backward.empty()) backward.pop();
+            backward.push("http://www.lightoj.com/");
             break;
         }
 
@@ -70,13 +70,15 @@ void Operation()
 }
 int main()
 {
-    int case_;
+    int cases;
     backward.push("http://www.lightoj.com/");
-    scanf("%d", &case_);
 
-    while (case_ > 0){
+    scanf("%d", &cases);
+    int i = 1;
+    while (i <= cases){
+        printf("Case %d:\n", i);
         Operation();
-        case_--;
+        i++;
     }
     return 0;
 }
