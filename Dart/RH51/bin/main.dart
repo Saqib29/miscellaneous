@@ -13,4 +13,8 @@ void main() {
   print((a+b)/c);
 
   print(fname+ " " +lname);
+  print("\n");
+
+  dynamic dy = "Professional Software Engineer";
+  print(dy);
 }
