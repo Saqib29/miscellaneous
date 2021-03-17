@@ -1,5 +1,0 @@
-
-Loops:
-	1. Definite -> for
-	
-	2. Indifinite -> while,  do..while

@@ -1,8 +1,0 @@
-dynamic keyword::
-
-- dynamic keyword is the replacement of var keyword.
-
-const & final keyword::
-
-- const or final variables are not mutable.
-  both are same and alternative of each other.
