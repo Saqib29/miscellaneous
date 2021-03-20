@@ -9,16 +9,13 @@ class MyClass{
   var fname;
   var lname;
   
-  MyClass(){
-    this.fname = "Sarfee";
-    this.lname = "Anam";
+  MyClass(var fname, var lname){
+    this.fname = fname;
+    this.lname = lname;
   }
 
   void Name(){
-    print("Saqib Aminul Islam");
-  }
-
-  void SonName(){
     print("${this.fname} ${this.lname}");
   }
+
 }

@@ -1,10 +1,13 @@
-
+import 'dart:io';
 import './MyClass.dart';
 
 void main(){
-  var obj = new MyClass();
+  var dad = new MyClass("Saqib", "Aminul");
+  stdout.write("Father Name: ");
+  dad.Name();
 
-  obj.Name();
-
-  obj.SonName();
+  var son = MyClass("Sarfee", "Anam");
+  stdout.write("Son name: ");
+  son.Name();
+   
 }
