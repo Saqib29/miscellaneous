@@ -8,6 +8,10 @@ void main(){
 
   var obj = new ChildClass();
 
+  print("Father information:\n");
+  obj.sum();
+
+  print("Son information\n");
   obj.Name();
 
   obj.addTwo();

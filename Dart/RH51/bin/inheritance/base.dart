@@ -1,6 +1,8 @@
 
 abstract class BaseClass{
 
+  var country = "Bangladesh";
+
   void addTwo(){
     print(20+30);
   }
