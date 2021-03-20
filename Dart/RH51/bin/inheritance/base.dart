@@ -1,5 +1,5 @@
 
-class BaseClass{
+abstract class BaseClass{
 
   void addTwo(){
     print(20+30);
